@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.example.ui.BottomLayout
+        android:id="@+id/mybottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0077" >
+    </com.example.ui.BottomLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/parentViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/mybottomlayout" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
